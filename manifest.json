@@ -1,0 +1,24 @@
+{
+    "name": "Calculadora",
+    "description": "Una Calculadora desarrolada para aprender a hacer extenciones",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": {
+            "16": "/imaganes/icons/16.png",
+            "32": "/imaganes/icons/32.png",
+            "48": "/imaganes/icons/48.png",
+            "128": "/imaganes/icons/128.png"
+
+        }
+    },
+    "icons": {
+        "16": "/imaganes/icons/16.png",
+        "32": "/imaganes/icons/32.png",
+        "48": "/imaganes/icons/48.png",
+        "128": "/imaganes/icons/128.png"
+
+    }
+
+}

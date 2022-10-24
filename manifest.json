@@ -1,6 +1,6 @@
 {
     "name": "Calculadora",
-    "description": "Una Calculadora desarrolada para aprender a hacer extenciones",
+    "description": "Calculadora y cronometro, desarrolada para practicar",
     "version": "1.0",
     "manifest_version": 3,
     "action": {

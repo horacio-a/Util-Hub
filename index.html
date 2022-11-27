@@ -21,9 +21,15 @@
             <ul>
                 <li id="bntCalculadora" class="active">Calculadora</li>
                 <li id="bntCronometro">Cronometro</li>
+                convertir
+                <li id="bntDistancia">Distancia</li>
+
             </ul>
+            <div class="moreinfo" id="btnInfo">
+                Mas informacion
+            </div>
         </div>
-        <div class="conteiner-calculadora" id="conteiner-calculadora">
+        <div class="conteiner-calculadora active" id="conteiner-calculadora">
             <div class="display" id='display'>
                 <div id="valor-anterior"></div>
                 <div id="valor-actual"></div>
@@ -65,12 +71,75 @@
                 </div>
             </div>
         </div>
-    </div>
+        <div id="distancias">
+            <div class="conteinerDistacias">
+                <div class="column">
+                    <select name="" id="selectFrom">
+                        <option value="nanometers">nanometers</option>
+                        <option value="microns">microns</option>
+                        <option value="millimeters">millimeters</option>
+                        <option value="centimeters">centimeters</option>
+                        <option value="meters">meters</option>
+                        <option value="kilometers">kilometers</option>
+                        <option value="inches">inches</option>
+                        <option value="feet">feet</option>
+                        <option value="yard">yard</option>
+                        <option value="miles">miles</option>
+                        <option value="nauticalmiles">nauticalmiles</option>
+                    </select>
+                    <input type="number" id="valueConver">
+                </div>
+
+                <div class="column">
+                    <select name="" id="selectTo">
+                        <option value="nanometers">nanometers</option>
+                        <option value="microns">microns</option>
+                        <option value="millimeters">millimeters</option>
+                        <option value="centimeters">centimeters</option>
+                        <option value="meters">meters</option>
+                        <option value="kilometers">kilometers</option>
+                        <option value="inches">inches</option>
+                        <option value="feet">feet</option>
+                        <option value="yard">yard</option>
+                        <option value="miles">miles</option>
+                        <option value="nauticalmiles">nauticalmiles</option>
+                    </select>
+                    <div id="resultado"></div>
+                </div>
+                <div class="conteinerButton">
+
+                    <button id="converlogitud">Convertir</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="conteiner-info">
+            <div class="conteiner-titulo">
+                <img src="imaganes/icons/512.png" alt="">
+                Util Hub
+            </div>
+            <div class="conteiner-links">
+                <div class="row">
+                    <p>Aplicacion desarrolada </p>
+                    <a href="https://horaciomalbornoz.com.ar/" target="_blank">por horacio albornoz.</a>
+                </div>
+                <div class="row">
+                    <p class="code">Codigo de la aplicacion:</p>
+                    <a href="https://github.com/horacio-a/calculadora-extencion"
+                        target="_blank">github.com/horacio-a/calculadora-extencion</a>
+                </div>
+            </div>
+
+        </div>
+        </>
 
     </div>
     <script src="Display.js"></script>
     <script src="Calculadora.js"></script>
     <script src="index.js"></script>
+    <script src="Distancia.js"></script>
+
     <script src="stopwatch.js"></script>
 
 </body>

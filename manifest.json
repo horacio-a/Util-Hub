@@ -1,7 +1,7 @@
 {
-    "name": "Calculadora",
-    "description": "Calculadora y cronometro, desarrolada para practicar",
-    "version": "1.0",
+    "name": "Util hub",
+    "description": "Queremos ser tu hub, una union entre tu y la productividad",
+    "version": "2.0",
     "manifest_version": 3,
     "action": {
         "default_popup": "index.html",

@@ -34,12 +34,22 @@ header{
 .conteiner-calculadora{
     height: 85%;
     width: 100%;
+    display: none;
+
+
+}
+
+.conteiner-calculadora.active{
+    height: 85%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 }
+
+
 
 .calculadora {
     height: 75%;
@@ -84,6 +94,16 @@ button.special {
     border-radius: 5px;
     background-color: #FFFFFF;
     color: black;
+}
+button.special:hover {
+    cursor: pointer;
+    margin: 5px;
+    padding: 0;
+    font-size: 1.25em;
+    border: none;
+    border-radius: 5px;
+    background-color: #4C4C4C;
+    color: white;
 }
 
 
@@ -252,13 +272,16 @@ button:hover {
 /* Estilos para el contenedor del Menú */
 .cont-menu{
     background-color: #1f1f1f;
-    box-shadow: 2px 0px 5px 2px rgb(66,66,66);
     width: 200px;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
     transition: all .5s ease;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* Estilos por agregar en JavaScript */
@@ -268,6 +291,7 @@ button:hover {
 
 /* Estilos para el listado del Menú */
 .cont-menu ul{
+    width: 100%;
     padding: 100px 0px 20px 0px;
     list-style: none;
     display: flex;
@@ -319,3 +343,183 @@ button:hover {
 }
 
 
+.moreinfo{
+    cursor: pointer;
+    width: 90%;
+    height: 8vh;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+    text-decoration: none;
+    color: black;
+}
+
+.moreinfo.active{
+    cursor: pointer;
+    width: 90%;
+    height: 8vh;
+    background-color: #4488F4;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+#conteiner-info.active{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#conteiner-info{
+    display: none;
+}
+
+
+#conteiner-info .conteiner-titulo{
+    width: 95%;
+    height: 35%;
+    border-radius: 5px 5px 0px 0px;
+    font-size: 4.5vh;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#conteiner-info .conteiner-titulo img{
+height: 75%;
+
+}
+
+#conteiner-info .conteiner-links{
+    border-radius: 0px 0px 5px 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    height: 35%;
+    background-color: #1f1f1f;
+}
+
+#conteiner-info .conteiner-links .row{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+#conteiner-info .conteiner-links .row p{
+    color: white;
+    margin: 0%;
+}
+
+#conteiner-info .conteiner-links .row a{
+    color: white;
+    margin: 0%;
+    cursor: pointer;
+    text-decoration: none;
+}
+#conteiner-info .conteiner-links .row p.code{
+    color: #4488F4;
+    font-size: 3.75vh;
+    margin: 0%;
+    text-decoration: none;
+}
+
+
+#distancias{
+    display: none;
+}
+
+#distancias.active{
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    align-items: center;
+    width: 100%;
+    height: 85%;
+}
+
+
+#distancias .conteinerDistacias{
+    width: 85%;
+    padding: 2.5%;
+    height: 50%;
+    border-radius: 5px;
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#distancias .conteinerDistacias .column{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+#distancias .conteinerDistacias .conteinerButton{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.conteinerDistacias select{
+    width: 45%;
+    font-family:'Rubik', sans-serif;
+    border-radius: 5px;
+
+    height: 50%;
+}
+
+.conteinerDistacias input{
+    border-radius: 5px;
+    width: 45%;
+    height: 50%;
+    margin: 0%;
+    padding: 0%;
+    border: none;
+    text-align: center;
+
+}
+
+.conteinerDistacias #resultado{
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 50%;
+    background-color: #FFFFFF;
+}
+
+#converlogitud{
+    font-family:'Rubik', sans-serif;
+    width: 40%;
+    height: 70%;
+    border-radius: 5px;
+    font-size: 110%;
+}

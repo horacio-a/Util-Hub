@@ -13,6 +13,13 @@ header{
 
 
 }
+
+.tituloHeader{
+    color: #FFFFFF;
+    font-size: 3.5vh;
+    margin-top: 7.5%;
+    margin-bottom: 2.5%;
+}
 .container {
     display: flex;
     flex-direction: column;
